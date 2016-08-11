@@ -1,0 +1,207 @@
+\documentclass{beamer}
+
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{amssymb} 
+\usepackage{amsmath}
+\usepackage{multimedia}
+\usepackage{hyperref}
+\usetheme{Madrid}
+\graphicspath{ {Pictures/} }
+\definecolor{lightblue}{RGB}{0,73,114}
+\definecolor{grund}{RGB}{238,241,251}          
+\definecolor{schrift}{RGB}{0,73,114}
+\definecolor{magenta}{RGB}{128,0,128}
+
+\definecolor{maroon}{RGB}{113, 41, 21  }
+\setbeamercolor{structure}{fg=maroon}
+\title[]{Concordia University}
+
+% A subtitle is optional and this may be deleted
+\subtitle{Concordia University Presentation}
+
+\author[]{Name 1 \\ \and Name 2\\ \and Name 3\\ \and Name 4\\}  
+
+
+% - Give the names in the same order as the appear in the paper.
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[] % (optional, but mostly needed)
+{
+%Change Team Name
+  Concordia Team\\
+}
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\date{}
+% - Either use conference name or its abbreviation.
+% - Not really informative to the audience, more for people (including
+%   yourself) who are reading the slides online
+
+\subject{Concordia University}
+% This is only inserted into the PDF information catalog. Can be left
+% out. 
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+\pgfdeclareimage[height=1cm]{university-logo}{./Pictures/university-logo-Concordia}
+\logo{\pgfuseimage{university-logo}}
+
+
+
+
+% - Either use conference name or its abbreviation.
+% - Not really informative to the audience, more for people (including
+%   yourself) who are reading the slides online
+
+\subject{SOEN 6441, Advanced Programming Practices}
+
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>{Contents of the section}
+    \tableofcontents[currentsection]
+    %,currentsubsection]
+  \end{frame}
+}
+
+% Let's get started
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
+
+% Section and subsections will appear in the presentation overview
+% and table of contents.
+\section{Project Description}
+\begin{frame}{Project Description}
+
+\end{frame}
+
+%\subsection{Second Subsection}
+
+% You can reveal the parts of a slide one at a time
+% with the \pause command:
+\section{Content}
+\begin{frame}{Content}
+
+\begin{block}{Block}
+
+Add text here ! 
+
+\end{block}
+\end{frame}
+
+\begin{frame}{Continuing Content Section}
+
+\begin{block}{Content}
+
+Block
+
+\end{block}
+
+\end{frame}
+
+\begin{frame}{Continuing Content Section}
+
+\textbf{List}
+
+\begin{itemize}
+  \item {
+   1
+    %\pause % The slide will pause after showing the first item
+  }
+   \item {
+    2
+    %\pause % The slide will pause after showing the first item
+  }
+  \item {
+    3
+    %\pause % The slide will pause after showing the first item
+  }
+  \end{itemize}
+  
+\begin{block}{Block}
+  Block
+\end{block}
+
+\end{frame}
+
+\section{Another Section}
+\begin{frame}{Another Section}
+
+ 
+  
+\end{frame}
+
+
+
+\section{Tools}
+\begin{frame}{Tools}
+  
+\end{frame}
+
+
+% Placing a * after \section means it will not show in the
+% outline or table of contents.
+
+\section{Conclusion}
+
+\begin{frame}{Conclusion}
+ 
+
+\end{frame}
+
+\section{Q\&A}
+\begin{frame}{Q\&A}
+\begin{figure}
+\includegraphics[scale=0.5]{qa}
+\end{figure}
+\end{frame}
+
+
+
+% All of the following is optional and typically not needed. 
+\appendix
+\section<presentation>*{\appendixname}
+\subsection<presentation>*{References}
+
+\begin{frame}[allowframebreaks]
+  \frametitle<presentation>{For Further Reading}
+    
+  \begin{thebibliography}{10}
+    
+  \beamertemplatebookbibitems
+  % Start with overview books.
+
+  \bibitem{Author1990}
+    A.~Author.
+    \newblock {\em Handbook of Everything}.
+    \newblock Some Press, 1990.
+ 
+    
+  \beamertemplatearticlebibitems
+  % Followed by interesting articles. Keep the list short. 
+
+  \bibitem{Someone2000}
+    S.~Someone.
+    \newblock On this and that.
+    \newblock {\em Journal of This and That}, 2(1):50--100,
+    2000.
+  \end{thebibliography}
+\end{frame}
+
+\end{document}
+
+
